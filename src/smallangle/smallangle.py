@@ -18,11 +18,7 @@ def cmd_group():
     show_default=True,  # show default in help
 )
 def sin(steps):
-    """Gives a 2 lists of x and sinx in given steps between 0 and 2pi
-
-    Args:
-        steps (int): The number of steps between 0 and 2pi
-    """
+    """Gives a 2 lists of x and sinx in given steps between 0 and 2pi"""
     x = np.linspace(0, 2 * pi, steps)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -37,11 +33,7 @@ def sin(steps):
     show_default=True,  # show default in help
 )
 def tan(steps):
-    """Gives a 2 lists of x and tanx in given steps between 0 and 2pi
-
-    Args:
-        steps (int): The number of steps between 0 and 2pi
-    """
+    """Gives a 2 lists of x and tanx in given steps between 0 and 2pi"""
     x = np.linspace(0, 2 * pi, steps)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
